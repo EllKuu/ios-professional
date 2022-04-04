@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     let stackView = UIStackView()
     let newPasswordTextField = PasswordTextField(placeHolderText: "New Password")
+    let passwordCriteriaView = PasswordCriteriaView(text: "uppercase letter (A-Z)")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,26 +25,30 @@ class ViewController: UIViewController {
 extension ViewController {
     func style() {
         newPasswordTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordCriteriaView.translatesAutoresizingMaskIntoConstraints = false
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 20
+        
+        
     }
     
     func layout() {
-        stackView.addArrangedSubview(newPasswordTextField)
+        //stackView.addArrangedSubview(newPasswordTextField)
+        stackView.addArrangedSubview(passwordCriteriaView)
         view.addSubview(stackView)
         
-        NSLayoutConstraint.activate([
-            newPasswordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            newPasswordTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-        ])
+//        NSLayoutConstraint.activate([
+//            newPasswordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+//            newPasswordTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+//        ])
         
         // stackview
         NSLayoutConstraint.activate([
-            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
-            stackView.trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 2)
+            stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 1),
+            view.trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 1),
+            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
         
         
