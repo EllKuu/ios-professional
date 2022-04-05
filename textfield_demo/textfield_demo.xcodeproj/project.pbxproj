@@ -7,31 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2ABE59027F91BED00C54A8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ABE58F27F91BED00C54A8B /* AppDelegate.swift */; };
-		B2ABE59427F91BED00C54A8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ABE59327F91BED00C54A8B /* ViewController.swift */; };
-		B2ABE59927F91BEF00C54A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2ABE59827F91BEF00C54A8B /* Assets.xcassets */; };
-		B2ABE59C27F91BEF00C54A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2ABE59A27F91BEF00C54A8B /* LaunchScreen.storyboard */; };
-		B2ABE5A527F91ECE00C54A8B /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ABE5A427F91ECE00C54A8B /* PasswordTextField.swift */; };
-		B2ABE5A827FB242E00C54A8B /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ABE5A727FB242E00C54A8B /* PasswordCriteriaView.swift */; };
-		B2ABE5AA27FB2DCD00C54A8B /* PasswordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ABE5A927FB2DCD00C54A8B /* PasswordStatusView.swift */; };
-		B2ABE5CC27FBC95D00C54A8B /* PasswordCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ABE5CB27FBC95D00C54A8B /* PasswordCriteria.swift */; };
+		B2ABE5B827FBBC0100C54A8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ABE5B727FBBC0100C54A8B /* AppDelegate.swift */; };
+		B2ABE5BC27FBBC0100C54A8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ABE5BB27FBBC0100C54A8B /* ViewController.swift */; };
+		B2ABE5C127FBBC0300C54A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2ABE5C027FBBC0300C54A8B /* Assets.xcassets */; };
+		B2ABE5C427FBBC0300C54A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2ABE5C227FBBC0300C54A8B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B2ABE58C27F91BED00C54A8B /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2ABE58F27F91BED00C54A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2ABE59327F91BED00C54A8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2ABE59827F91BEF00C54A8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B2ABE59B27F91BEF00C54A8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B2ABE59D27F91BEF00C54A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2ABE5A427F91ECE00C54A8B /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
-		B2ABE5A727FB242E00C54A8B /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
-		B2ABE5A927FB2DCD00C54A8B /* PasswordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusView.swift; sourceTree = "<group>"; };
-		B2ABE5CB27FBC95D00C54A8B /* PasswordCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteria.swift; sourceTree = "<group>"; };
+		B2ABE5B427FBBC0100C54A8B /* textfield_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textfield_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2ABE5B727FBBC0100C54A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2ABE5BB27FBBC0100C54A8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2ABE5C027FBBC0300C54A8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2ABE5C327FBBC0300C54A8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2ABE5C527FBBC0300C54A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B2ABE58927F91BED00C54A8B /* Frameworks */ = {
+		B2ABE5B127FBBC0100C54A8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,90 +33,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B2ABE58327F91BED00C54A8B = {
+		B2ABE5AB27FBBC0100C54A8B = {
 			isa = PBXGroup;
 			children = (
-				B2ABE58E27F91BED00C54A8B /* Password */,
-				B2ABE58D27F91BED00C54A8B /* Products */,
+				B2ABE5B627FBBC0100C54A8B /* textfield_demo */,
+				B2ABE5B527FBBC0100C54A8B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B2ABE58D27F91BED00C54A8B /* Products */ = {
+		B2ABE5B527FBBC0100C54A8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B2ABE58C27F91BED00C54A8B /* Password.app */,
+				B2ABE5B427FBBC0100C54A8B /* textfield_demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B2ABE58E27F91BED00C54A8B /* Password */ = {
+		B2ABE5B627FBBC0100C54A8B /* textfield_demo */ = {
 			isa = PBXGroup;
 			children = (
-				B2ABE5A327F91C5A00C54A8B /* Files */,
-				B2ABE58F27F91BED00C54A8B /* AppDelegate.swift */,
-				B2ABE59327F91BED00C54A8B /* ViewController.swift */,
-				B2ABE5A427F91ECE00C54A8B /* PasswordTextField.swift */,
-				B2ABE5A627FB240300C54A8B /* PasswordStatusView */,
+				B2ABE5B727FBBC0100C54A8B /* AppDelegate.swift */,
+				B2ABE5BB27FBBC0100C54A8B /* ViewController.swift */,
+				B2ABE5C027FBBC0300C54A8B /* Assets.xcassets */,
+				B2ABE5C227FBBC0300C54A8B /* LaunchScreen.storyboard */,
+				B2ABE5C527FBBC0300C54A8B /* Info.plist */,
 			);
-			path = Password;
-			sourceTree = "<group>";
-		};
-		B2ABE5A327F91C5A00C54A8B /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				B2ABE59827F91BEF00C54A8B /* Assets.xcassets */,
-				B2ABE59A27F91BEF00C54A8B /* LaunchScreen.storyboard */,
-				B2ABE59D27F91BEF00C54A8B /* Info.plist */,
-			);
-			name = Files;
-			sourceTree = "<group>";
-		};
-		B2ABE5A627FB240300C54A8B /* PasswordStatusView */ = {
-			isa = PBXGroup;
-			children = (
-				B2ABE5A727FB242E00C54A8B /* PasswordCriteriaView.swift */,
-				B2ABE5A927FB2DCD00C54A8B /* PasswordStatusView.swift */,
-				B2ABE5CB27FBC95D00C54A8B /* PasswordCriteria.swift */,
-			);
-			name = PasswordStatusView;
+			path = textfield_demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B2ABE58B27F91BED00C54A8B /* Password */ = {
+		B2ABE5B327FBBC0100C54A8B /* textfield_demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2ABE5A027F91BEF00C54A8B /* Build configuration list for PBXNativeTarget "Password" */;
+			buildConfigurationList = B2ABE5C827FBBC0300C54A8B /* Build configuration list for PBXNativeTarget "textfield_demo" */;
 			buildPhases = (
-				B2ABE58827F91BED00C54A8B /* Sources */,
-				B2ABE58927F91BED00C54A8B /* Frameworks */,
-				B2ABE58A27F91BED00C54A8B /* Resources */,
+				B2ABE5B027FBBC0100C54A8B /* Sources */,
+				B2ABE5B127FBBC0100C54A8B /* Frameworks */,
+				B2ABE5B227FBBC0100C54A8B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Password;
-			productName = Password;
-			productReference = B2ABE58C27F91BED00C54A8B /* Password.app */;
+			name = textfield_demo;
+			productName = textfield_demo;
+			productReference = B2ABE5B427FBBC0100C54A8B /* textfield_demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B2ABE58427F91BED00C54A8B /* Project object */ = {
+		B2ABE5AC27FBBC0100C54A8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					B2ABE58B27F91BED00C54A8B = {
+					B2ABE5B327FBBC0100C54A8B = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
-			buildConfigurationList = B2ABE58727F91BED00C54A8B /* Build configuration list for PBXProject "Password" */;
+			buildConfigurationList = B2ABE5AF27FBBC0100C54A8B /* Build configuration list for PBXProject "textfield_demo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,49 +104,45 @@
 				en,
 				Base,
 			);
-			mainGroup = B2ABE58327F91BED00C54A8B;
-			productRefGroup = B2ABE58D27F91BED00C54A8B /* Products */;
+			mainGroup = B2ABE5AB27FBBC0100C54A8B;
+			productRefGroup = B2ABE5B527FBBC0100C54A8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B2ABE58B27F91BED00C54A8B /* Password */,
+				B2ABE5B327FBBC0100C54A8B /* textfield_demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B2ABE58A27F91BED00C54A8B /* Resources */ = {
+		B2ABE5B227FBBC0100C54A8B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2ABE59C27F91BEF00C54A8B /* LaunchScreen.storyboard in Resources */,
-				B2ABE59927F91BEF00C54A8B /* Assets.xcassets in Resources */,
+				B2ABE5C427FBBC0300C54A8B /* LaunchScreen.storyboard in Resources */,
+				B2ABE5C127FBBC0300C54A8B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B2ABE58827F91BED00C54A8B /* Sources */ = {
+		B2ABE5B027FBBC0100C54A8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2ABE59427F91BED00C54A8B /* ViewController.swift in Sources */,
-				B2ABE5CC27FBC95D00C54A8B /* PasswordCriteria.swift in Sources */,
-				B2ABE59027F91BED00C54A8B /* AppDelegate.swift in Sources */,
-				B2ABE5A827FB242E00C54A8B /* PasswordCriteriaView.swift in Sources */,
-				B2ABE5AA27FB2DCD00C54A8B /* PasswordStatusView.swift in Sources */,
-				B2ABE5A527F91ECE00C54A8B /* PasswordTextField.swift in Sources */,
+				B2ABE5BC27FBBC0100C54A8B /* ViewController.swift in Sources */,
+				B2ABE5B827FBBC0100C54A8B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B2ABE59A27F91BEF00C54A8B /* LaunchScreen.storyboard */ = {
+		B2ABE5C227FBBC0300C54A8B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B2ABE59B27F91BEF00C54A8B /* Base */,
+				B2ABE5C327FBBC0300C54A8B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -182,7 +150,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B2ABE59E27F91BEF00C54A8B /* Debug */ = {
+		B2ABE5C627FBBC0300C54A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,7 +210,7 @@
 			};
 			name = Debug;
 		};
-		B2ABE59F27F91BEF00C54A8B /* Release */ = {
+		B2ABE5C727FBBC0300C54A8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -296,7 +264,7 @@
 			};
 			name = Release;
 		};
-		B2ABE5A127F91BEF00C54A8B /* Debug */ = {
+		B2ABE5C927FBBC0300C54A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -305,7 +273,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LVUJURGN29;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Password/Info.plist;
+				INFOPLIST_FILE = textfield_demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -315,7 +283,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elliottkung.sample.Password;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elliottkung.sample.textfield-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,7 +291,7 @@
 			};
 			name = Debug;
 		};
-		B2ABE5A227F91BEF00C54A8B /* Release */ = {
+		B2ABE5CA27FBBC0300C54A8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -332,7 +300,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LVUJURGN29;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Password/Info.plist;
+				INFOPLIST_FILE = textfield_demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -342,7 +310,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elliottkung.sample.Password;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elliottkung.sample.textfield-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -353,25 +321,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B2ABE58727F91BED00C54A8B /* Build configuration list for PBXProject "Password" */ = {
+		B2ABE5AF27FBBC0100C54A8B /* Build configuration list for PBXProject "textfield_demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2ABE59E27F91BEF00C54A8B /* Debug */,
-				B2ABE59F27F91BEF00C54A8B /* Release */,
+				B2ABE5C627FBBC0300C54A8B /* Debug */,
+				B2ABE5C727FBBC0300C54A8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2ABE5A027F91BEF00C54A8B /* Build configuration list for PBXNativeTarget "Password" */ = {
+		B2ABE5C827FBBC0300C54A8B /* Build configuration list for PBXNativeTarget "textfield_demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2ABE5A127F91BEF00C54A8B /* Debug */,
-				B2ABE5A227F91BEF00C54A8B /* Release */,
+				B2ABE5C927FBBC0300C54A8B /* Debug */,
+				B2ABE5CA27FBBC0300C54A8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B2ABE58427F91BED00C54A8B /* Project object */;
+	rootObject = B2ABE5AC27FBBC0100C54A8B /* Project object */;
 }
