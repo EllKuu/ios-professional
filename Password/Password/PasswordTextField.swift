@@ -9,18 +9,33 @@ import UIKit
 
 protocol PasswordTextFieldDelegate: AnyObject{
     func editingChanged(_ sender: PasswordTextField)
+    func editingDidEnd(_ sender: PasswordTextField)
 }
 
 class PasswordTextField: UIView {
     
+    /**
+     A function one passes in to do custom validation on the text field.
+     
+     - Parameter: textValue: The value of text to validate
+     - Returns: A Bool indicating whether text is valid, and if not a String containing an error message
+     */
+    typealias CustomValidation = (_ textValue: String?) -> (Bool, String)?
+    
     let lockImageView = UIImageView(image: UIImage(systemName: "lock.fill"))
     let textField = UITextField()
-    let placeHolderText: String
     let eyeButton = UIButton(type: .custom)
     let dividerView = UIView()
     let errorLabel = UILabel()
     
+    let placeHolderText: String
+    var customValidation: CustomValidation? // add
     weak var delegate: PasswordTextFieldDelegate?
+    
+    var text: String? {
+        get { return textField.text }
+        set { textField.text = newValue }
+    }
     
     init(placeHolderText: String){
         self.placeHolderText = placeHolderText
@@ -73,7 +88,7 @@ extension PasswordTextField {
         errorLabel.isHidden = true
         errorLabel.numberOfLines = 0
         errorLabel.lineBreakMode = .byWordWrapping
-
+        
         
     }
     
@@ -83,9 +98,9 @@ extension PasswordTextField {
         addSubview(eyeButton)
         addSubview(dividerView)
         addSubview(errorLabel)
-
         
-       // lock
+        
+        // lock
         NSLayoutConstraint.activate([
             lockImageView.centerYAnchor.constraint(equalTo: textField.centerYAnchor),
             lockImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -111,20 +126,20 @@ extension PasswordTextField {
             dividerView.heightAnchor.constraint(equalToConstant: 1),
             dividerView.topAnchor.constraint(equalToSystemSpacingBelow: textField.bottomAnchor, multiplier: 1)
         ])
-
+        
         // error
         NSLayoutConstraint.activate([
             errorLabel.topAnchor.constraint(equalTo: dividerView.bottomAnchor, constant: 4),
             errorLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
             errorLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
         ])
-
+        
         
         // CHCR
         lockImageView.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .horizontal)
         textField.setContentHuggingPriority(UILayoutPriority.defaultLow, for: .horizontal)
         eyeButton.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .horizontal)
-
+        
     }
     
 }
@@ -146,5 +161,42 @@ extension PasswordTextField{
 // MARK: UITextFieldDelegate
 
 extension PasswordTextField: UITextFieldDelegate{
-   
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print("foo - textFieldDidEndEditing: \(textField.text)")
+        delegate?.editingDidEnd(self)
+    }
+    
+    // Called when 'return' key pressed. Necessary for dismissing keyboard.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("foo - textFieldShouldReturn")
+        textField.endEditing(true) // resign first responder
+        return true
+    }
+    
+}
+
+// typealias CustomValidation = (_ textValue: String?) -> (Bool, String)?
+
+// MARK: - Validation
+extension PasswordTextField {
+    func validate() -> Bool {
+        if let customValidation = customValidation,
+            let customValidationResult = customValidation(text),
+            customValidationResult.0 == false {
+            showError(customValidationResult.1)
+            return false
+        }
+        clearError()
+        return true
+    }
+    
+    private func showError(_ errorMessage: String) {
+        errorLabel.isHidden = false
+        errorLabel.text = errorMessage
+    }
+
+    private func clearError() {
+        errorLabel.isHidden = true
+        errorLabel.text = ""
+    }
 }
